@@ -320,7 +320,6 @@ def carbon_storage_economic(p):
             
        
 def pollination_biophysical(p):
-    """Calculate carbon storage presentfrom LULC maps."""
 
     p.exhaustive_carbon_table_path = os.path.join(p.base_data_dir, "global_invest", "carbon", "exhaustive_carbon_table.csv")
 

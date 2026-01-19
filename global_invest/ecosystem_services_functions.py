@@ -61,10 +61,8 @@ BMP_LULC_CODES = [300]
 NODATA = -9999
 N_WORKERS = max(1, multiprocessing.cpu_count())
 
-
-
-from global_invest import carbon_storage_ipcc_tier_1_cython
-from global_invest.carbon_storage_ipcc_tier_1_cython import write_carbon_table_to_array
+# from global_invest import carbon_storage_ipcc_tier_1_cython
+# from global_invest.carbon_storage_ipcc_tier_1_cython import write_carbon_table_to_array
 
 def carbon_storage_ipcc_tier_1(lulc_path, carbon_zones_path, carbon_table_path, output_path):
     lookup_table_df = pd.read_csv(carbon_table_path, index_col=0)
